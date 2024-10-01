@@ -17,6 +17,7 @@ export class AuthService {
         private configService: ConfigService,
 
     ) { }
+    
     //logic registre
     async signUp(signUpDto: SignUpDto): Promise<{ token: string }> {
         const {  email, password } = signUpDto;
